@@ -1,4 +1,4 @@
-import LandingPage from "../components/Landingpage";
+import LandingPage from "../components/Landingpage/Landingpage";
 
 
 const HomePage = ()=>{

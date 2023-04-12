@@ -76,13 +76,14 @@ const MyRooms = ()=>{
             };
         }
     }
+
     return(
         <div className="container-fluid p-0">
         <Navigation />
         <div className="container">
         <button className="btn btn-primary ms-auto d-block" onClick={() => {setIsOpen(true)}}>Add Room</button>
         <AddRoommodal isOpen={isOpen}  onHide={() => {setIsOpen(false)}} onSubmitRoomHandler={onSubmitRoom} values={{nameRef,num_bedsRef, floor_sizeRef, amenitiesRef, maximum_bookingRef, minimum_bookingRef, imageRef, priceRef}} />
-        <OwnerRooms userId ={userId} token={tokenId} />
+        <OwnerRooms />
         </div>
         </div>
     );

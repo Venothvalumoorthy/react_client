@@ -1,8 +1,8 @@
 import classes from "./CardRoom.module.css";
+import editimage from "./../../images/edit.svg";
+
 const CardRoom = (props)=>{
-  
     return (
-        
         <div className="col-lg-3 col-md-4 col-sm-6">
         <div className="shadow">
             <div className="position-relative">
@@ -12,7 +12,10 @@ const CardRoom = (props)=>{
                     <p className="text-white">per night</p>
                 </div>
             </div>
-            <p className="p-2 text-center text-capitalize fw-bold bg-light">{props.name}</p>
+            <div className="d-flex justify-content-between  bg-light p-2">
+            <p className="p-2 text-center text-capitalize fw-bold mb-0">{props.name}</p>
+            {props.type === "owner" && <img src={editimage} width="20px" onClick={props.onEdit} alt="edit"  />}
+            </div>
         </div>
     </div>
     )

@@ -16,8 +16,8 @@ const LandingPage = ()=>{
       setUsersData(JSON.parse(user));
     }
   }, []);
-  console.log(users)
-    return (
+
+  return (
         <div className="container-fluid p-0">
             <Navigation />
             <header className={classes.defaultHero}>
